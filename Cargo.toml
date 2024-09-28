@@ -6,6 +6,7 @@ edition = "2021"
 [dependencies]
 chrono = "0.4.38"
 clap = { version = "4.5.18", features = ["derive"] }
+ssh2 = "0.9.4"
 trust-dns-resolver = "0.23.2"
 
 [[bin]]
@@ -15,3 +16,7 @@ path = "src/bin/port-scanner/main.rs"
 [[bin]]
 name = "dns-enum"
 path = "src/bin/dns-enum/main.rs"
+
+[[bin]]
+name = "ssh-brute"
+path = "src/bin/ssh-brute/main.rs"
