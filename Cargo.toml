@@ -6,7 +6,12 @@ edition = "2021"
 [dependencies]
 chrono = "0.4.38"
 clap = { version = "4.5.18", features = ["derive"] }
+trust-dns-resolver = "0.23.2"
 
 [[bin]]
 name = "port-scanner"
 path = "src/bin/port-scanner/main.rs"
+
+[[bin]]
+name = "dns-enum"
+path = "src/bin/dns-enum/main.rs"
