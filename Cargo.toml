@@ -1,0 +1,12 @@
+[package]
+name = "oxidise7"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.38"
+clap = { version = "4.5.18", features = ["derive"] }
+
+[[bin]]
+name = "port-scanner"
+path = "src/bin/port-scanner/main.rs"
